@@ -3,237 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafe JC's | Multicuisine Café in Chandigarh</title>
-    <meta name="description" content="Cafe JC's is a multicuisine café and restaurant offering indoor and outdoor dining in Sector 10, Chandigarh.">
+    <title>Cafe JC's | Multicuisine Café in Sector 10, Chandigarh</title>
+    <meta name="description" content="Welcome to Cafe JC's, a relaxed, welcoming multicuisine cafe in Sector 10, Chandigarh. Enjoy indoor and outdoor garden seating with a warm atmosphere.">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!-- Navbar -->
-    <header class="navbar" id="navbar">
-        <div class="container nav-content">
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
             <a href="#" class="logo">
-                <span class="logo-text">Cafe JC's</span>
+                <img src="./assets/media__1772999402063.png" alt="Cafe JC's Logo" class="logo-img" style="height: 60px; width: auto;">
             </a>
-            <nav class="nav-links">
-                <a href="#about">About We</a>
+            <div class="nav-links">
+                <a href="#experience">Experience</a>
                 <a href="#ambience">Ambience</a>
-                <a href="#dining">Dining</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="nav-actions">
-                <a href="#reservations" class="btn btn-primary">Book a Table</a>
-                <button class="mobile-menu-btn" aria-label="Toggle menu" id="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <a href="#location">Location</a>
+                <a href="#" class="btn btn-outline" id="view-menu-btn">View Menu</a>
+                <a href="#" class="btn btn-primary" id="book-table-btn">Book a Table</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#ambience" class="mobile-link">Ambience</a>
+            <a href="#location" class="mobile-link">Location</a>
+            <a href="#" class="btn btn-outline mobile-btn">View Menu</a>
+            <a href="#" class="btn btn-primary mobile-btn">Book a Table</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <img src="./assets/media__1772999402819.png" alt="Cafe JC's Outdoor Seating" class="hero-image parallax">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="badge">Sector 10D, Chandigarh &nbsp;|&nbsp; Morning to Late Evening</div>
+            <h1 class="hero-title fade-up">A Lively Neighbourhood <br><span>Dining Destination</span></h1>
+            <p class="hero-subtitle fade-up delay-1">Immerse yourself in our strong coffee culture and casual gathering appeal, perfect for breakfasts, meetups, and relaxed social dining.</p>
+            <div class="hero-actions fade-up delay-2">
+                <a href="#book" class="btn btn-primary btn-large">Book Your Table</a>
+                <a href="#experience" class="btn btn-text btn-large">Explore Ambience <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <div class="mobile-nav">
-            <div class="mobile-header">
-                <span class="logo-text">Cafe JC's</span>
-                <button class="close-btn" id="close-btn"><i class="fas fa-times"></i></button>
+    <!-- Quick Info Bar (Trust Signals) -->
+    <section class="quick-info">
+        <div class="info-container">
+            <div class="info-item">
+                <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="info-text">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Sector 10D, Chandigarh</span>
+                </div>
             </div>
-            <a href="#about" class="mobile-link">About Us</a>
-            <a href="#ambience" class="mobile-link">Ambience</a>
-            <a href="#dining" class="mobile-link">Dining</a>
-            <a href="#contact" class="mobile-link">Contact</a>
-            <a href="#reservations" class="btn btn-primary mobile-btn">Book a Table</a>
+            <div class="info-item rating-item">
+                <div class="info-icon rating-icon"><i class="fab fa-google"></i></div>
+                <div class="info-text">
+                    <span class="info-label">Google Rating</span>
+                    <div class="rating-value">
+                        <span class="score">4.1 / 5</span> 
+                        <span class="reviews text-muted" style="font-size: 0.8rem;">(2,900+ reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-item rating-item">
+                <div class="info-icon rating-icon" style="background-color: #E3F2FD; color: #1976D2;"><i class="fab fa-facebook-f"></i></div>
+                <div class="info-text">
+                    <span class="info-label">Facebook Recommended</span>
+                    <div class="rating-value">
+                        <span class="score">94%</span> 
+                        <span class="reviews text-muted" style="font-size: 0.8rem;">(1,100+ reviews)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon" style="background-color: var(--primary-light); color: var(--primary-dark);"><i class="fas fa-award"></i></div>
+                <div class="info-text">
+                    <span class="info-label">Recognized</span>
+                    <span class="info-value">"Best Cafe" Multi-Year</span>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-overlay"></div>
-            <div class="container hero-content">
-                <span class="badge reveal">Sector 10, Chandigarh</span>
-                <h1 class="reveal delay-1">Multicuisine Café & Restaurant</h1>
-                <p class="reveal delay-2">Experience a relaxed modern dining atmosphere with the perfect touch of nature.</p>
-                <div class="hero-actions reveal delay-3">
-                    <a href="#reservations" class="btn btn-primary btn-large">Reserve Your Table</a>
-                    <a href="#ambience" class="btn btn-outline btn-large">Explore Ambience</a>
+    <!-- Dining Experience -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">The Dining Experience</h2>
+                <div class="section-divider"></div>
+                <p class="section-desc">Experience our signature multicuisine menu centered around premium coffee culture, hearty breakfasts, and popular casual meals including wood-fired pizzas, hearty pastas, and fresh salads.</p>
+            </div>
+            
+            <div class="experience-grid">
+                <!-- Card 1 -->
+                <div class="experience-card">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/media__1772999402568.png" alt="Cosy Indoor Dining" class="card-image">
+                        <div class="card-badge">Indoor</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Cozy Indoor Dining</h3>
+                        <p class="card-desc">Warm café-style interiors with soft lighting and decorative elements, perfect for intimate meetings and relaxed dining.</p>
+                    </div>
                 </div>
-                
-                <div class="trust-signals reveal delay-4">
-                    <div class="signal">
-                        <i class="fas fa-clock"></i>
-                        <span>9:30 AM – 11:30 PM</span>
+
+                <!-- Card 2 -->
+                <div class="experience-card feature-card">
+                    <div class="card-image-wrapper">
+                        <img src="./assets/media__1772999402326.png" alt="Outdoor Patio Dining" class="card-image">
+                        <div class="card-badge">Outdoor</div>
                     </div>
-                    <div class="signal">
-                        <i class="fas fa-wallet"></i>
-                        <span>₹1500 for two</span>
+                    <div class="card-content">
+                        <h3 class="card-title">Open-Air Patio</h3>
+                        <p class="card-desc">Bask in our garden-style courtyard seating featuring large umbrellas, natural textures, and abundant greenery.</p>
                     </div>
-                    <div class="signal rating">
-                        <i class="fas fa-star text-gold"></i>
-                        <span>4/5 on EazyDiner</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="experience-card">
+                    <div class="card-image-wrapper">
+                        <!-- Replace with actual multicuisine food/ambience photo -->
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&q=80&w=1000" alt="Multicuisine Offerings" class="card-image">
+                        <div class="card-badge">Menu</div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Breakfast & Coffee</h3>
+                        <p class="card-desc">Start your day right with our famed coffee culture and signature morning dishes served in our welcoming environment.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section class="about section-padding" id="about">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-text reveal">
-                        <span class="section-subtitle">Welcome to Cafe JC's</span>
-                        <h2 class="section-title">A Perfect Blend of Comfort & Taste</h2>
-                        <p>Located in the heart of Sector 10, Chandigarh, Cafe JC's is a multicuisine café designed to offer a comfortable, relaxed, and welcoming environment for all occasions.</p>
-                        <p>Whether you're looking for a casual meal, a small gathering with friends, or a quiet space to unwind, our indoor and outdoor seating areas provide the perfect backdrop for your dining experience.</p>
-                        
-                        <div class="features">
-                            <div class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-leaf"></i></div>
-                                <div>
-                                    <h3>Garden Seating</h3>
-                                    <p>Enjoy our beautiful outdoor space.</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <div class="feature-icon"><i class="fas fa-utensils"></i></div>
-                                <div>
-                                    <h3>Multicuisine Menu</h3>
-                                    <p>A diverse culinary journey.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-image-wrapper reveal delay-2">
-                        <div class="about-image patio-img"></div>
-                        <div class="experience-badge">
-                            <span class="number">10+</span>
-                            <span class="texts">Years of<br>Hospitality</span>
-                        </div>
-                    </div>
+    <!-- Ambience Showcase (Split View) -->
+    <section id="ambience" class="section ambience-section">
+        <div class="ambience-container">
+            <div class="ambience-content">
+                <span class="subtitle">Atmosphere & Infrastructure</span>
+                <h2 class="title">Evening Courtyard Charm</h2>
+                <p class="description">As the sun sets over Chandigarh, our garden transforms. Soft fairy lighting entwines with the natural greenery, creating a mesmerizing backdrop for evening catch-ups and memorable dinners.</p>
+                <ul class="feature-list special-features">
+                    <li><i class="fas fa-paw"></i> Pet menu available</li>
+                    <li><i class="fas fa-music"></i> Live music events & social evenings</li>
+                    <li><i class="fas fa-rainbow"></i> LGBTQ+ friendly environment</li>
+                    <li><i class="fas fa-female"></i> Proudly Women-owned business</li>
+                </ul>
+                <a href="#location" class="btn btn-primary mt-4">Visit Location <i class="fas fa-map-pin"></i></a>
+            </div>
+            <div class="ambience-visual">
+                <div class="image-stack">
+                    <img src="./assets/media__1772999402884.png" alt="Evening Courtyard Seating" class="stack-img-main">
+                    <div class="stack-decoration"></div>
                 </div>
             </div>
-        </section>
-
-        <!-- Ambience Section -->
-        <section class="ambience section-padding bg-light" id="ambience">
-            <div class="container">
-                <div class="section-header text-center reveal">
-                    <span class="section-subtitle">Our Atmosphere</span>
-                    <h2 class="section-title">Designed for Relaxation</h2>
-                    <p class="section-desc">From our warm wooden interiors to our charming umbrella-covered patios, every corner of Cafe JC's is crafted to make you feel at home.</p>
-                </div>
-                
-                <div class="gallery-grid">
-                    <div class="gallery-item large reveal">
-                        <div class="gallery-img indoor-img"></div>
-                        <div class="gallery-overlay">
-                            <h3>Warm Indoor Seating</h3>
-                            <p>Perfect for groups and cozy dining.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item reveal delay-1">
-                        <div class="gallery-img garden-img"></div>
-                        <div class="gallery-overlay">
-                            <h3>Evening Garden Vibe</h3>
-                            <p>Beautiful ambient lighting.</p>
-                        </div>
-                    </div>
-                    <div class="gallery-item reveal delay-2">
-                        <div class="gallery-img food-img"></div>
-                        <div class="gallery-overlay">
-                            <h3>Premium Dining</h3>
-                            <p>A feast for the senses.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Dining Section -->
-        <section class="dining section-padding" id="dining">
-            <div class="container">
-                <div class="dining-content text-center reveal">
-                    <span class="section-subtitle">Multicuisine Experience</span>
-                    <h2 class="section-title">A Journey of Flavors</h2>
-                    <p class="section-desc">Our diverse menu spans continental classics to rich Indian flavors, all prepared with fresh ingredients and served with typical Chandigarh hospitality. Though we pride ourselves on variety, our main focus is on providing a holistic dining experience that complements the food.</p>
-                    <a href="#reservations" class="btn btn-primary mt-4">Book Your Table Today</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reservations & Contact -->
-        <section class="reservations section-padding bg-teal text-white" id="reservations">
-            <div class="container text-center reveal">
-                <span class="section-subtitle text-light">Join Us</span>
-                <h2 class="section-title">Reserve Your Table</h2>
-                <p class="section-desc text-light">Securing your spot is easy. Call us directly or visit us at our location in Sector 10.</p>
-                
-                <div class="contact-grid mt-5">
-                    <div class="contact-card">
-                        <div class="icon-circle"><i class="fas fa-map-marker-alt"></i></div>
-                        <h3>Location</h3>
-                        <p>Sector 10, Chandigarh<br>India, 160011</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="icon-circle"><i class="fas fa-phone-alt"></i></div>
-                        <h3>Call Us</h3>
-                        <p>+91 98765 43210<br>+91 172 123 4567</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="icon-circle"><i class="fas fa-clock"></i></div>
-                        <h3>Hours</h3>
-                        <p>Monday - Sunday<br>9:30 AM – 11:30 PM</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="container border-bottom pb-4 mb-4">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="#" class="logo mb-3 d-inline-block">
-                        <span class="logo-text">Cafe JC's</span>
-                    </a>
-                    <p class="text-muted">A modern, hospitality-focused casual dining café and restaurant located in Chandigarh, offering indoor and outdoor dining wrapped in warm natural ambiance.</p>
-                    <div class="social-links mt-4">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#ambience">Ambience</a></li>
-                        <li><a href="#dining">Dining Menu</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-partners">
-                    <h4 class="footer-title">Trusted Partners & Platforms</h4>
-                    <p class="text-muted mb-3">Find us and avail special offers on:</p>
-                    <div class="partner-logos">
-                        <span class="partner-tag">EazyDiner</span>
-                        <span class="partner-tag">Justdial</span>
-                        <span class="partner-tag">PayEazy</span>
-                    </div>
-                    <p class="text-sm text-muted mt-3"><i class="fas fa-check-circle text-success"></i> Digital bill payment supported</p>
+    <footer id="location" class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Café JC's</h3>
+                <p class="footer-desc">Your favorite casual dine-in cafe in Chandigarh, offering a perfect blend of multicuisine flavors and a serene garden-style atmosphere.</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/cafejcs/?hl=en" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/cafejcs/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
+            <div class="footer-contact">
+                <h4 class="footer-heading">Visit Us</h4>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> Sector 10D, Chandigarh, India</p>
+                    <p><i class="far fa-clock"></i> Morning to Late Evening</p>
+                </address>
+                <a href="#" class="btn btn-outline footer-btn">Get Directions</a>
+            </div>
+            <div class="footer-links">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul>
+                    <li><a href="#experience">Dining Experience</a></li>
+                    <li><a href="#ambience">Ambience</a></li>
+                    <li><a href="#">Our Menu</a></li>
+                    <li><a href="#">Book a Table</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="container text-center pt-2 pb-4">
-            <p class="text-muted mb-0">&copy; 2026 Cafe JC's, Chandigarh. All rights reserved.</p>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cafe JC's. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
